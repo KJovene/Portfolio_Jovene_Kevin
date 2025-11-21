@@ -9,7 +9,7 @@ Portfolio personnel présentant mes projets, compétences et expériences en tan
 - **Vite** comme bundler
 - **CSS moderne** avec animations et responsive design
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Design responsive** avec menu hamburger mobile
 - **Interface moderne** avec dégradés et animations fluides
