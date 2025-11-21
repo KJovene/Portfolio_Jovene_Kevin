@@ -42,6 +42,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="profile-info-mobile">
           <h1 className="profile-name">Kévin Jovené</h1>
           <p className="profile-role">Développeur Full Stack</p>
+          <p className="profile-role">A la recherche d'une alternance</p>
           {/* Social Links */}
           <div className="social-links">
             <a
@@ -120,6 +121,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
           <h1 className="profile-name">Kévin Jovené</h1>
           <p className="profile-role">Développeur Full Stack</p>
+          <p className="profile-role">A la recherche d'une alternance</p>
 
           {/* Social Links */}
           <div className="social-links">
