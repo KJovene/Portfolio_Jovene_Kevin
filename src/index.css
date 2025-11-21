@@ -133,7 +133,7 @@ html {
   padding: 1rem;
   overflow-y: auto;
   height: 100vh;
-  padding-top: 6rem;
+  padding-top: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -225,6 +225,7 @@ html {
   transition: left 0.3s ease;
   box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .sidebar-container.sidebar-open {
@@ -391,6 +392,13 @@ html {
   border-top: 1px solid rgb(31, 41, 55);
 }
 
+@media (max-width: 767px) {
+  .sidebar-footer {
+    padding: 1rem 1.5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+}
+
 @media (min-width: 768px) {
   .sidebar-footer {
     padding: 1.5rem;
@@ -421,11 +429,13 @@ html {
 
 .projects-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 @media (min-width: 768px) {
   .projects-section {
     margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
   }
 }
 
@@ -622,11 +632,13 @@ html {
 
 .skills-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 @media (min-width: 768px) {
   .skills-section {
     margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
   }
 }
 
@@ -749,11 +761,13 @@ html {
 
 .experience-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 @media (min-width: 768px) {
   .experience-section {
     margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
   }
 }
 
@@ -925,11 +939,13 @@ html {
 
 .education-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 @media (min-width: 768px) {
   .education-section {
     margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
   }
 }
 
@@ -1066,11 +1082,13 @@ html {
 
 .contact-section {
   margin-bottom: 2.5rem;
+  scroll-margin-top: 8.5rem;
 }
 
 @media (min-width: 768px) {
   .contact-section {
     margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
   }
 }
 
