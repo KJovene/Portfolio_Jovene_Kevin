@@ -394,8 +394,9 @@ html {
 
 @media (max-width: 767px) {
   .sidebar-footer {
-    padding: 1rem 1.5rem 2rem;
+    padding: 1rem 1.5rem 3rem;
     background-color: rgba(0, 0, 0, 0.95);
+    margin-bottom: 2rem;
   }
 }
 
@@ -429,13 +430,13 @@ html {
 
 .projects-section {
   margin-bottom: 2.5rem;
-  scroll-margin-top: 8.5rem;
+  scroll-margin-top: 9rem;
 }
 
 @media (min-width: 768px) {
   .projects-section {
     margin-bottom: 4rem;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 1rem;
   }
 }
 
@@ -632,13 +633,13 @@ html {
 
 .skills-section {
   margin-bottom: 2.5rem;
-  scroll-margin-top: 8.5rem;
+  scroll-margin-top: 9rem;
 }
 
 @media (min-width: 768px) {
   .skills-section {
     margin-bottom: 4rem;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 1rem;
   }
 }
 
@@ -761,13 +762,13 @@ html {
 
 .experience-section {
   margin-bottom: 2.5rem;
-  scroll-margin-top: 8.5rem;
+  scroll-margin-top: 9rem;
 }
 
 @media (min-width: 768px) {
   .experience-section {
     margin-bottom: 4rem;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 1rem;
   }
 }
 
@@ -939,13 +940,13 @@ html {
 
 .education-section {
   margin-bottom: 2.5rem;
-  scroll-margin-top: 8.5rem;
+  scroll-margin-top: 9rem;
 }
 
 @media (min-width: 768px) {
   .education-section {
     margin-bottom: 4rem;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 1rem;
   }
 }
 
@@ -1082,13 +1083,13 @@ html {
 
 .contact-section {
   margin-bottom: 2.5rem;
-  scroll-margin-top: 8.5rem;
+  scroll-margin-top: 9rem;
 }
 
 @media (min-width: 768px) {
   .contact-section {
     margin-bottom: 4rem;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 1rem;
   }
 }
 
