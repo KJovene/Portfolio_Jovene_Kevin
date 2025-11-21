@@ -1,0 +1,9 @@
+export { Sidebar } from "./Sidebar";
+export { ProjectCard } from "./ProjectCard";
+export { ProjectsSection } from "./ProjectsSection";
+export { ProjectDetail } from "./ProjectDetail";
+export { Background } from "./Background";
+export { SkillsSection } from "./SkillsSection";
+export { ExperienceSection } from "./ExperienceSection";
+export { EducationSection } from "./EducationSection";
+export { ContactSection } from "./ContactSection";
