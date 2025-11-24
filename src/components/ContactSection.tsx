@@ -41,7 +41,7 @@ export const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="contact-section">
       <h2 className="section-title">
-        <span className="section-title-gradient">Get In</span> Touch
+        <span className="section-title-gradient">Get In Touch</span>
       </h2>
 
       <div className="contact-container">

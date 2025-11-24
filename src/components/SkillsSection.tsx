@@ -2,7 +2,7 @@ import React from "react";
 
 interface Skill {
   name: string;
-  icon: string;
+  icon?: string;
 }
 
 interface SkillsSectionProps {
@@ -91,7 +91,7 @@ const DEFAULT_TOOLS: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
   { name: "Strapi", icon: "https://strapi.io/assets/strapi-logo-dark.svg" },
-  { name: "Neon", icon: "https://neon.tech/favicon/favicon.svg" },
+  { name: "Neon" },
   { name: "n8n", icon: "https://n8n.io/favicon.ico" },
   {
     name: "Prisma",
@@ -124,7 +124,9 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
           <div className="skill-tags">
             {languages.map((lang) => (
               <span key={lang.name} className="skill-tag">
-                <img src={lang.icon} alt={lang.name} className="skill-icon" />
+                {lang.icon && (
+                  <img src={lang.icon} alt={lang.name} className="skill-icon" />
+                )}
                 {lang.name}
               </span>
             ))}
@@ -137,7 +139,9 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
           <div className="skill-tags">
             {tools.map((tool) => (
               <span key={tool.name} className="skill-tag">
-                <img src={tool.icon} alt={tool.name} className="skill-icon" />
+                {tool.icon && (
+                  <img src={tool.icon} alt={tool.name} className="skill-icon" />
+                )}
                 {tool.name}
               </span>
             ))}

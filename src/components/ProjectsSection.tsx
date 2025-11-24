@@ -5,6 +5,7 @@ import MapImage from "../assets/MapImage.png";
 import FrenzProject from "../assets/FrenzProject.png";
 import HackatonProject from "../assets/HackatonProject.png";
 import FlowFitProject from "../assets/FlowFitProject.png";
+import ScrollyProject from "../assets/ScrollyProject.png";
 
 interface Project {
   id: string;
@@ -95,8 +96,7 @@ const DEFAULT_PROJECTS: Project[] = [
     image: FlowFitProject,
     location: "Noisy-Le-Grand",
     period: "Novembre 2025",
-    context:
-      "Projet - Hackaton - Application de mise en commun de veille technologique",
+    context: "Projet perso - Application de sport",
     stack: "Front (React) / Back (Node) / BDD (Mongo)",
     tags: ["React", "Node.js", "MongoDB"],
     achievements: [
@@ -106,6 +106,23 @@ const DEFAULT_PROJECTS: Project[] = [
       "Optimisation de l'expérience utilisateur pour permettre un suivi et une progression efficace des entraînements.",
     ],
     link: "https://github.com/KJovene/FlowFit",
+  },
+  {
+    id: "5",
+    title: "Projet Hetic - Scrolly",
+    description: "Création d'un feed de réseau social",
+    image: ScrollyProject,
+    location: "Montreuil",
+    period: "Avril 2025",
+    context: "Projet - Scrolly - Feed de réseau social",
+    stack: "Back PHP (Symfony)/ Twig / BDD (Mongo)",
+    tags: ["Symfony", "MongoDB"],
+    achievements: [
+      "Mise en place d’un système de connexion utilisateur sécurisé.",
+      "Implémentation complète des opérations CRUD (création, lecture, modification, suppression) sur les posts.",
+      "Conception d’une interface utilisateur interactive pour la consultation et la publication de contenu en temps réel.",
+    ],
+    link: "https://github.com/KJovene/Scrolly",
   },
 ];
 
