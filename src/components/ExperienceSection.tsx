@@ -6,7 +6,7 @@ interface Experience {
   company: string;
   period: string;
   description: string;
-  achievements: string[];
+  achievements?: string[];
 }
 
 interface ExperienceSectionProps {
@@ -26,6 +26,13 @@ const DEFAULT_EXPERIENCES: Experience[] = [
       "Développement des fonctionnalités CRUD (création, lecture, mise à jour, suppression) sur l’ensemble des modules applicatifs.",
       "Conception du backend selon une architecture MVC pour une meilleure maintenabilité et séparation des responsabilités.",
     ],
+  },
+  {
+    id: "2",
+    title: "Business Developer",
+    company: "Majoby / Neosilver",
+    period: "2021 - 2024",
+    description: "Commercial dans des entreprises de différents secteurs",
   },
 ];
 
@@ -49,11 +56,13 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
               </div>
               <h4 className="experience-company">{exp.company}</h4>
               <p className="experience-description">{exp.description}</p>
-              <ul className="experience-achievements">
-                {exp.achievements.map((achievement, idx) => (
-                  <li key={idx}>{achievement}</li>
-                ))}
-              </ul>
+              {exp.achievements && exp.achievements.length > 0 && (
+                <ul className="experience-achievements">
+                  {exp.achievements.map((achievement, idx) => (
+                    <li key={idx}>{achievement}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}
