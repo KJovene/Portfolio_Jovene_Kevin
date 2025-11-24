@@ -4,6 +4,7 @@ import { ProjectDetail } from "./ProjectDetail";
 import MapImage from "../assets/MapImage.png";
 import FrenzProject from "../assets/FrenzProject.png";
 import HackatonProject from "../assets/HackatonProject.png";
+import FlowFitProject from "../assets/FlowFitProject.png";
 
 interface Project {
   id: string;
@@ -16,6 +17,7 @@ interface Project {
   context?: string;
   stack: string;
   achievements: string[];
+  link?: string;
 }
 
 interface ProjectsProps {
@@ -25,7 +27,7 @@ interface ProjectsProps {
 const DEFAULT_PROJECTS: Project[] = [
   {
     id: "1",
-    title: "StreetPedia",
+    title: "Stage - StreetPedia",
     description:
       "Application qui permet de découvrir son environnement durant ses déplacements",
     image: MapImage,
@@ -48,10 +50,11 @@ const DEFAULT_PROJECTS: Project[] = [
       "Développement des fonctionnalités CRUD (création, lecture, mise à jour, suppression) sur l'ensemble des modules applicatifs.",
       "Conception du backend selon une architecture MVC pour une meilleure maintenabilité et séparation des responsabilités.",
     ],
+    link: "Projet réalisé sur un Gitea privé.",
   },
   {
     id: "2",
-    title: "Frenz",
+    title: "Projet Hetic - Frenz",
     description: "Plateforme communautaire basée sur le style de Reddit",
     image: FrenzProject,
     location: "Hetic, Montreuil",
@@ -65,10 +68,11 @@ const DEFAULT_PROJECTS: Project[] = [
       "Intégration de Strapi comme CMS backend pour la gestion des utilisateurs, permissions et contenus.",
       "Développement des fonctionnalités CRUD : création, édition et suppression de posts avec validation et gestion des médias.",
     ],
+    link: "https://github.com/KJovene/Frenz",
   },
   {
     id: "3",
-    title: "Hackaton",
+    title: "Projet Hetic - Hackaton",
     description: "Application de mise en commun de veille technologique",
     image: HackatonProject,
     location: "Hetic, Montreuil",
@@ -82,6 +86,26 @@ const DEFAULT_PROJECTS: Project[] = [
       "Développement d'un module de veille technologique collaborative : création, partage et catégorisation de ressources technologiques entre utilisateurs.",
       "Conception d'une API REST Node.js et intégration avec une base de données AWS.",
     ],
+    link: "https://github.com/KJovene/Hackatombe",
+  },
+  {
+    id: "4",
+    title: "Projet Perso - FlowFit",
+    description: "Application de Musculation, yoga et mobilité",
+    image: FlowFitProject,
+    location: "Noisy-Le-Grand",
+    period: "Novembre 2025",
+    context:
+      "Projet - Hackaton - Application de mise en commun de veille technologique",
+    stack: "Front (React) / Back (Node) / BDD (Mongo)",
+    tags: ["React", "Node.js", "MongoDB"],
+    achievements: [
+      "Mise en place d'un système d'authentification sécurisé des utilisateurs.",
+      "Création de fonctionnalités pour générer des séances de sport personnalisées.",
+      "Développement d'un module permettant de créer et de gérer des exercices ciblés selon les besoins des utilisateurs.",
+      "Optimisation de l'expérience utilisateur pour permettre un suivi et une progression efficace des entraînements.",
+    ],
+    link: "https://github.com/KJovene/FlowFit",
   },
 ];
 
@@ -113,6 +137,7 @@ export const ProjectsSection: React.FC<ProjectsProps> = ({
             description={project.description}
             image={project.image}
             tags={project.tags}
+            link={project.link}
             onClick={() => setSelectedProject(project)}
           />
         ))}
