@@ -8,6 +8,7 @@ interface Skill {
 interface SkillsSectionProps {
   languages?: Skill[];
   tools?: Skill[];
+  deploys?: Skill[];
 }
 
 const DEFAULT_LANGUAGES: Skill[] = [
@@ -91,7 +92,7 @@ const DEFAULT_TOOLS: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
   { name: "Strapi", icon: "https://strapi.io/assets/strapi-logo-dark.svg" },
-  { name: "Neon" },
+  { name: "Neon", icon: "https://neon.tech/favicon.ico" },
   { name: "n8n", icon: "https://n8n.io/favicon.ico" },
   {
     name: "Prisma",
@@ -107,9 +108,29 @@ const DEFAULT_TOOLS: Skill[] = [
   },
 ];
 
+const DEFAULT_DEPLOY: Skill[] = [
+  {
+    name: "Supabase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+  },
+  {
+    name: "Vercel",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+  },
+  {
+    name: "Neon.Tech",
+    icon: "https://neon.tech/favicon.ico",
+  },
+  {
+    name: "Render",
+    icon: "https://avatars.githubusercontent.com/u/36424661?s=200&v=4",
+  },
+];
+
 export const SkillsSection: React.FC<SkillsSectionProps> = ({
   languages = DEFAULT_LANGUAGES,
   tools = DEFAULT_TOOLS,
+  deploys = DEFAULT_DEPLOY,
 }) => {
   return (
     <section id="skills" className="skills-section">
@@ -143,6 +164,24 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
                   <img src={tool.icon} alt={tool.name} className="skill-icon" />
                 )}
                 {tool.name}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="skill-category">
+          <h3 className="skill-category-title">Outils & Technologies</h3>
+          <div className="skill-tags">
+            {deploys.map((deploy) => (
+              <span key={deploy.name} className="skill-tag">
+                {deploy.icon && (
+                  <img
+                    src={deploy.icon}
+                    alt={deploy.name}
+                    className="skill-icon"
+                  />
+                )}
+                {deploy.name}
               </span>
             ))}
           </div>
