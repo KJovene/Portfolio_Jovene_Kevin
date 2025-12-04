@@ -170,7 +170,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
         </div>
 
         <div className="skill-category">
-          <h3 className="skill-category-title">Outils & Technologies</h3>
+          <h3 className="skill-category-title">Déploiement</h3>
           <div className="skill-tags">
             {deploys.map((deploy) => (
               <span key={deploy.name} className="skill-tag">
